@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="UNISON — an AI fashion film by IRREAL LAB. A study of authority, identity and collective movement.">
+  <meta property="og:title" content="UNISON — An IRREAL LAB Film">
+  <meta property="og:description" content="One figure. Three factions. A single collective pulse.">
+  <meta property="og:image" content="assets/poster.jpg">
+  <title>UNISON — IRREAL LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#050505;--ink:#0b0b0d;--white:#f2efe9;--muted:#9b9b9e;--line:rgba(255,255,255,.14);--red:#c52a2d;--blue:#2661d8;--green:#19895a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Manrope,Arial,sans-serif}a{color:inherit}button{font:inherit}
+    .nav{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:25px clamp(20px,4vw,64px);mix-blend-mode:difference;text-transform:uppercase;letter-spacing:.19em;font-size:10px}.logo{font-weight:600}.nav a{text-decoration:none}
+    .hero{min-height:100svh;position:relative;display:grid;place-items:end start;overflow:hidden;background:url('assets/poster.jpg') center/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.24) 58%,rgba(0,0,0,.06)),linear-gradient(0deg,rgba(0,0,0,.9),transparent 60%)}
+    .hero-copy{position:relative;z-index:2;padding:0 clamp(20px,6vw,92px) clamp(54px,8vh,100px);width:min(950px,100%)}.eyebrow{font:300 10px/1.5 "DM Mono",monospace;text-transform:uppercase;letter-spacing:.26em;color:#c9c6c0;margin-bottom:20px}.hero h1{margin:0;font-size:clamp(78px,17vw,230px);font-weight:500;line-height:.72;letter-spacing:-.075em}.hero-sub{display:flex;gap:22px;align-items:center;margin-top:34px;font-size:clamp(14px,1.5vw,19px);font-weight:300}.hero-sub:before{content:"";width:56px;height:2px;background:linear-gradient(90deg,var(--red) 0 33%,var(--blue) 33% 66%,var(--green) 66%)}
+    .scroll{position:absolute;z-index:3;right:clamp(20px,4vw,64px);bottom:38px;font:300 9px "DM Mono",monospace;letter-spacing:.2em;text-transform:uppercase;writing-mode:vertical-rl}
+    .watch{padding:120px clamp(16px,5vw,76px);background:#080809}.section-top{display:flex;justify-content:space-between;align-items:end;margin:0 auto 25px;max-width:1400px}.section-top h2{font-size:clamp(32px,5vw,68px);line-height:1;margin:0;font-weight:400;letter-spacing:-.045em}.meta{font:300 10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+    .player{position:relative;max-width:1400px;margin:auto;background:#000;border:1px solid var(--line);box-shadow:0 35px 100px rgba(0,0,0,.65)}video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:contain}.sound-note{text-align:center;color:#777;font:300 9px "DM Mono",monospace;letter-spacing:.15em;text-transform:uppercase;margin-top:16px}
+    .manifesto{padding:150px clamp(20px,7vw,110px);background:var(--white);color:#0a0a0b}.manifesto-grid{max-width:1280px;margin:auto;display:grid;grid-template-columns:.65fr 1.35fr;gap:8vw}.manifesto h2{font-size:clamp(44px,7vw,100px);line-height:.92;letter-spacing:-.06em;font-weight:500;margin:0}.manifesto .lead{font-size:clamp(20px,2.5vw,34px);line-height:1.45;letter-spacing:-.025em;margin:0 0 55px}.body-copy{display:grid;grid-template-columns:1fr 1fr;gap:35px;border-top:1px solid #c5c1ba;padding-top:30px}.body-copy p{font-size:14px;line-height:1.75;color:#444;margin:0}
+    .factions{background:#0a0a0c;padding:125px clamp(20px,7vw,110px)}.factions-inner{max-width:1280px;margin:auto}.factions h2{font-size:clamp(44px,7vw,92px);font-weight:400;letter-spacing:-.055em;margin:0 0 70px}.faction-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.faction{padding:35px 35px 50px 0;border-bottom:1px solid var(--line)}.faction+.faction{padding-left:35px;border-left:1px solid var(--line)}.bar{height:3px;width:45px;margin-bottom:33px}.faction:nth-child(1) .bar{background:var(--blue)}.faction:nth-child(2) .bar{background:var(--red)}.faction:nth-child(3) .bar{background:var(--green)}.faction h3{font-size:23px;margin:0 0 15px;font-weight:500}.faction p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+    .credit{padding:100px 20px;text-align:center;background:#050505}.credit p{max-width:850px;margin:0 auto;color:#8e8e92;font-size:12px;line-height:1.8}.credit strong{color:#d8d5cf;font-weight:500}.credit .mark{font-size:clamp(34px,6vw,75px);letter-spacing:-.05em;color:var(--white);margin-bottom:30px}
+    footer{display:flex;justify-content:space-between;gap:30px;border-top:1px solid var(--line);padding:28px clamp(20px,4vw,64px);font:300 9px "DM Mono",monospace;letter-spacing:.15em;text-transform:uppercase;color:#777}
+    .enter{position:fixed;z-index:30;inset:0;background:#030303;display:grid;place-items:center;transition:opacity .8s,visibility .8s}.enter.hidden{opacity:0;visibility:hidden}.enter-inner{text-align:center}.enter-title{font-size:clamp(70px,18vw,220px);font-weight:500;letter-spacing:-.08em;line-height:.8}.enter button{margin-top:45px;color:white;background:none;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:14px 24px;text-transform:uppercase;letter-spacing:.18em;font-size:9px;cursor:pointer}.enter button:hover{background:white;color:black}.pulse{display:flex;justify-content:center;gap:5px;margin-top:28px}.pulse i{width:6px;height:6px;border-radius:50%;animation:pulse 1.5s infinite}.pulse i:nth-child(1){background:var(--blue)}.pulse i:nth-child(2){background:var(--red);animation-delay:.2s}.pulse i:nth-child(3){background:var(--green);animation-delay:.4s}@keyframes pulse{50%{transform:scale(1.8);opacity:.45}}
+    @media(max-width:760px){.hero{background-position:55% center}.hero-copy{padding-bottom:90px}.hero h1{font-size:25vw}.scroll{display:none}.section-top{align-items:start;gap:20px;flex-direction:column}.watch{padding-top:85px;padding-bottom:85px}.manifesto{padding-top:100px;padding-bottom:100px}.manifesto-grid{grid-template-columns:1fr}.body-copy{grid-template-columns:1fr}.faction-grid{grid-template-columns:1fr}.faction+.faction{padding-left:0;border-left:0}.faction{padding-right:0}footer{flex-direction:column}.nav span:last-child{display:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pulse i{animation:none}}
+  </style>
+</head>
+<body>
+  <div class="enter" id="enter"><div class="enter-inner"><div class="eyebrow">An IRREAL LAB film</div><div class="enter-title">UNISON</div><div class="pulse"><i></i><i></i><i></i></div><button id="enterButton">Enter the formation</button></div></div>
+  <nav class="nav"><a class="logo" href="#top">IRREAL LAB</a><span>Fashion film · 2026</span></nav>
+  <header class="hero" id="top"><div class="hero-copy"><div class="eyebrow">One figure · Three factions · One pulse</div><h1>UNISON</h1><div class="hero-sub">A study in collective movement</div></div><div class="scroll">Scroll to watch</div></header>
+  <main>
+    <section class="watch" id="film"><div class="section-top"><h2>Watch the film</h2><div class="meta">00:30 · AI film · Sound on</div></div><div class="player"><video id="video" controls playsinline preload="metadata" poster="assets/poster.jpg"><source src="assets/unison.mp4" type="video/mp4">Your browser does not support HTML5 video.</video></div><div class="sound-note">Headphones recommended</div></section>
+    <section class="manifesto"><div class="manifesto-grid"><div class="eyebrow">The concept</div><div><h2>Many bodies.<br>One movement.</h2><p class="lead">A solitary human figure enters a faceless order. Around him, three chromatic factions stop behaving as individuals and become a single choreographed organism.</p><div class="body-copy"><p>The glossy black helmets erase identity. Military tailoring imposes discipline. Blue, red and green embroidery introduces difference — only to make the final unity more visible.</p><p>Stillness becomes authority. Repetition becomes ritual. What begins as formation turns into collective euphoria: precise, physical and faintly unsettling.</p></div></div></div></section>
+    <section class="factions"><div class="factions-inner"><div class="eyebrow">Chromatic structure</div><h2>Three factions.<br>A shared rhythm.</h2><div class="faction-grid"><article class="faction"><div class="bar"></div><h3>Blue / Control</h3><p>Cold precision, restraint and the geometry of an ordered group.</p></article><article class="faction"><div class="bar"></div><h3>Red / Impact</h3><p>Urgency, collision and the rising pressure inside the formation.</p></article><article class="faction"><div class="bar"></div><h3>Green / Shift</h3><p>Transformation, instability and the moment order becomes movement.</p></article></div></div></section>
+    <section class="credit"><div class="mark">IRREAL LAB</div><p><strong>UNISON is an original AI reinterpretation and visual homage.</strong><br>Inspired by the collective choreography and staging of <em>STORM</em> by Gener8ion featuring Yung Lean, directed by Romain Gavras and choreographed by Damien Jalet. This project is not affiliated with or endorsed by the original artists or rights holders.</p></section>
+  </main>
+  <footer><span>© 2026 IRREAL LAB</span><span>Concept · AI direction · Visual creation</span></footer>
+  <script>
+    const enter=document.querySelector('#enter'),button=document.querySelector('#enterButton'),video=document.querySelector('#video');
+    button.addEventListener('click',()=>{enter.classList.add('hidden');document.body.style.overflow='';setTimeout(()=>document.querySelector('#film').scrollIntoView({behavior:'smooth'}),650)});
+    document.body.style.overflow='hidden';
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!enter.classList.contains('hidden'))button.click()});
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting&&!video.paused)video.pause()}),{threshold:.15});observer.observe(video);
+  </script>
+</body>
+</html>
